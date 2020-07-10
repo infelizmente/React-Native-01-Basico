@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import { StyleSheet, Text, View, TextInput, Button, Alert } from 'react-native';
 
 function BoasVindas(props) {
@@ -54,6 +55,18 @@ function BoasVindas(props) {
             <Text style={styles.texto}>{mensagem}</Text>
          </>
      )}
+=======
+import { StyleSheet, Text, View } from 'react-native';
+
+function BoasVindas(props) {
+
+  const [mensagem, setMensagem] = useState('Seja bem-vindo(a)!');
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.texto}>Olá {props.saudacao}</Text>
+      <Text style={styles.texto}>{mensagem}</Text>
+>>>>>>> 5f327114b42f70f7a052ec7093cf5f2394e2edde
     </View>
   )
 }
@@ -70,6 +83,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     textAlign: "center",
   },
+<<<<<<< HEAD
   input: {
       borderColor: '#fff',
       fontSize: 18,
@@ -84,3 +98,7 @@ const styles = StyleSheet.create({
   }, 
 });
 export default BoasVindas;
+=======
+});
+export default BoasVindas;
+>>>>>>> 5f327114b42f70f7a052ec7093cf5f2394e2edde
